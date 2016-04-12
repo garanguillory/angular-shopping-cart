@@ -1,21 +1,21 @@
 	<div class="container">
 		<div class="row">
-			<div class="sixteen columns">
+			<div class="twelve columns">
 				<table class="u-full-width">
 				  <thead>
 				    <tr>
 				      <th>Tea</th>
 				      <th>Information 
 				      	<span class="u-pull-right">Sort by Price
-					      	<select name="price-sort" id="price-sort">
-					      		<option value="high">Price high to low</option>
-					      		<option value="low">Price low to high</option>
+					      	<select name="pricesort" id="pricesort" ng-model="pricesort">
+					      		<option value="-price">Price high to low</option>
+					      		<option value="price">Price low to high</option>
 					      	</select>
 					      </span>
 				      </th>
 				    </tr>
 				  </thead> <!-- | filter:search | orderBy:price:reverse -->
-				  <tbody ng-repeat="tea in teas | orderBy:'name' ">
+				  <tbody ng-repeat="tea in teas | filter:search| orderBy:pricesort ">
 				    <tr>
 				      <td><img ng-src="{{tea.imageUrl}}" alt="{{tea.name}}"></td>
 				      <td>
