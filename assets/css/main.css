@@ -1,0 +1,73 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	1). universal
+	2). navbar
+	3). posts
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ------ universal ------- */
+
+	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	  display: none !important;
+	}
+
+	html{
+		font:16px;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #1EAEDB;
+	}
+	
+	.centered {
+		text-align: center;
+	}
+
+	#reset {
+		background: rgb(251,73,72);
+		border: none;
+		color: white;
+	}
+
+	#reset:hover {
+		background: rgb(226, 48, 47);
+	}
+
+/* ------ menu display ------- */
+
+	menu {
+		padding-left: 0;
+	}
+
+	#quantity {
+		width: 6rem;
+		margin-right: 0.5rem;
+	}
+
+	/*#add-to-bag {
+		width: 
+	}*/
+
+	.tea-categories {
+		display: inline-block;
+	}
+
+
+
+
+
+
