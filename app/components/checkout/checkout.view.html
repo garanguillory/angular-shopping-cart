@@ -1,0 +1,35 @@
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+			<h5>My Shopping Bag <span class="u-pull-right">Order total: {{orderTotal | money}} </span> </h5>
+				<table class="u-full-width">
+				  <thead>
+				    <tr>
+				      <th>Product</th>
+				      <th>Quantity</th>
+				      <th>Sub-total</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr ng-repeat="tea in order">
+				      <td>
+				      	<ul>
+				      		<li>{{tea.name}}</li>
+				      		<li><img ng-src="{{tea.imageUrl}}" alt="{{tea.name}}"></li>
+				      		<li>Caffeine Scale: {{tea.caffeineScale}}</li>
+				      		<li>Ingredients: {{tea.ingredients}}</li>
+				      		<li>Rating: {{tea.rating}}</li>
+				      	</ul>
+				      </td>
+				      <td> {{tea.quantity}} </td>
+				      <td> {{tea.subTotal | money}} </td>
+				      <td>
+				      	<input type="button" value="Edit">
+				      	<input type="button" value="Remove">
+				      </td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+	</div>

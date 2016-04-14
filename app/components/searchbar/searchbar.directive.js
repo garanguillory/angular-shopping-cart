@@ -17,7 +17,10 @@ app.directive("searchbar",['searchbarService', 'menuService',function(searchbarS
 								return categoriesRepeated.indexOf(element) == position;
 						});
 
-				
+				$scope.checkoutPage = function(){
+					
+				};
+
 
 				console.log($scope.categories);
 

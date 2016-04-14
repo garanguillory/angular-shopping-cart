@@ -37,13 +37,13 @@
 		text-align: center;
 	}
 
-	#reset {
+	#red {
 		background: rgb(251,73,72);
 		border: none;
 		color: white;
 	}
 
-	#reset:hover {
+	#red:hover {
 		background: rgb(226, 48, 47);
 	}
 
@@ -69,7 +69,7 @@
 		width: 
 	}*/
 
-	.tea-categories {
+	.tea-categories{
 		display: inline-block;
 	}
 

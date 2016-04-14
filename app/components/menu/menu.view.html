@@ -14,7 +14,7 @@
 					      </span>
 				      </th>
 				    </tr>
-				  </thead> <!-- | filter:search | orderBy:price:reverse -->
+				  </thead>
 				  <tbody ng-repeat="tea in teas | filter:search| orderBy:pricesort ">
 				    <tr>
 				      <td><img ng-src="{{tea.imageUrl}}" alt="{{tea.name}}"></td>
@@ -22,16 +22,16 @@
 					      <ul>
 					      	<li>
 						      	<span>{{tea.name}} 
-						      		<span class="u-pull-right">Quantity: <input id="quantity" type="number">
-						      		<span class="u-pull-right"><input id="add-to-bag" type="button" value="Add To Bag" >
+						      		<span class="u-pull-right">Quantity: <input id="quantity" type="number" min="1" ng-model="amount">
+						      		<span class="u-pull-right"><input id="add-to-bag" type="button" value="Add To Bag" ng-click="addToBag(amount)">
 						      		</span>
 						      	</span>
 					      	</li>
-					      	<li>Price: {{tea.price}}</li>
+					      	<li>Price: {{tea.price | money }}</li>
 					      	<li>Caffeine Scale: {{tea.caffeineScale}}</li>
 					      	<li>Ingredients: {{tea.ingredients}}</li>
 					      	<li>Rating: {{tea.rating}}</li>
-					      	<li>In Stock? {{tea.inStock}}</li>
+					      	<li>In Stock? {{tea.inStock | inStock }}</li>
 					      	<li>Categories:
 					      		<ul class="tea-categories" ng-repeat="category in tea.categories">
 					      			<li>{{category}}</li>
