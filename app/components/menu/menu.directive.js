@@ -40,8 +40,6 @@ app.directive("menu",['menuService',function(menuService){
 			// put these functions in 'menuService'
 			// put remove and edit functions in 'checkoutService' then into the checkout directive
 
-			// need to hide original tea quantity 'td' once clicked
-			// and show editable quantity option
 			$scope.edit = function(){
 				$scope.editQuantity = true;
 			};
@@ -63,3 +61,7 @@ app.directive("menu",['menuService',function(menuService){
 			templateUrl: "app/components/menu/menu.view.html"
 		};
 }]);
+
+$scope.orderTotal = 0;
+
+
