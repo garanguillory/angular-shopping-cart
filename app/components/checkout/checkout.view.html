@@ -21,11 +21,17 @@
 				      		<li>Rating: {{tea.rating}}</li>
 				      	</ul>
 				      </td>
-				      <td> {{tea.quantity}} </td>
+				      <td ng-show="!editQuantity"> {{tea.quantity}} </td>
+				      <td ng-show="editQuantity"><input type="number" min="0" ng-model="editAmount"></td>
 				      <td> {{tea.subTotal | money}} </td>
 				      <td>
-				      	<input type="button" value="Edit">
-				      	<input type="button" value="Remove">
+				      
+				      	<input type="button" value="Edit" ng-click="edit();" ng-show="!editQuantity">
+
+				      	<input type="button" value="Save" ng-click="save();" ng-show="editQuantity">
+				
+				      	<input type="button" value="Remove" ng-click="remove()">
+
 				      </td>
 				    </tr>
 				  </tbody>
