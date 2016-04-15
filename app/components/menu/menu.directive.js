@@ -7,7 +7,6 @@ app.directive("menu",['menuService',function(menuService){
 				$scope.teas = menuService;
 				$scope.order = [];
 				$scope.orderTotal = 0;
-				$scope.editAmount = 0;
 				$scope.editQuantity = false;
 
 				$scope.addToBag = function(amount){
@@ -45,23 +44,19 @@ app.directive("menu",['menuService',function(menuService){
 			// and show editable quantity option
 			$scope.edit = function(){
 				$scope.editQuantity = true;
-				console.log($scope.editQuantity);
-				// console.log(this.tea);
-				// console.log('quantity:',this.tea.quantity);
-				// console.log('price:',this.tea.price);
-				// console.log('subTotal:',this.tea.subTotal);
 			};
 
 			$scope.save = function(){
 				$scope.editQuantity = false;
-				console.log($scope.editQuantity);
+				$scope.orderTotal -= this.tea.subTotal;
+				this.tea.subTotal = 0;
+				$scope.orderTotal += (this.tea.quantity * this.tea.price);
+				this.tea.subTotal = (this.tea.quantity * this.tea.price);
 			};
 
 			$scope.remove = function(){
-				console.log(this.tea);
 				$scope.orderTotal -= this.tea.subTotal;
 				$scope.order.splice($scope.order.indexOf(this.tea), 1);
-				console.log($scope.order);
 			};
 
 			},

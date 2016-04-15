@@ -12,6 +12,7 @@ app.service('menuService',[ function(){
 	        "rating": 1,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/32664_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": [ "dark", "cold"]
 	    },
 	    {
@@ -24,6 +25,7 @@ app.service('menuService',[ function(){
 	        "rating": 2,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/32303_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["awesome"]
 	    },
 	    {
@@ -36,6 +38,7 @@ app.service('menuService',[ function(){
 	        "rating": 4,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/31358_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["cold"]
 	    },
 	    {
@@ -48,6 +51,7 @@ app.service('menuService',[ function(){
 	        "rating": 1,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/31358_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["dry", "hot", "awesome"]
 	    },
 	    {
@@ -60,6 +64,7 @@ app.service('menuService',[ function(){
 	        "rating": 1,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/32621_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["summer"]
 	    },
 	    {
@@ -72,6 +77,7 @@ app.service('menuService',[ function(){
 	        "rating": 3,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/31359_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["dry","lucid","warm"]
 	    },
 	    {
@@ -84,6 +90,7 @@ app.service('menuService',[ function(){
 	        "rating": 3,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/32303_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["summer"]
 	    },
 	    {
@@ -96,6 +103,7 @@ app.service('menuService',[ function(){
 	        "rating": 2,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/31358_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["dry","winter","lucid"]
 	    },
 	    {
@@ -108,6 +116,7 @@ app.service('menuService',[ function(){
 	        "rating": 3,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/32174_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["lucid","hot"]
 	    },
 	    {
@@ -120,6 +129,7 @@ app.service('menuService',[ function(){
 	        "rating": 2,
 	        "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/32621_d?$cimg$",
 	        "__v": 0,
+	        "quantity": 0,
 	        "categories": ["spring", "warm","winter"]
 	    }
 		];
