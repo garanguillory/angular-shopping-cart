@@ -4,7 +4,8 @@ app.directive("menu",['menuService',function(menuService){
 			restrict: 'AE',
 			controller: function($scope){
 
-				$scope.teas = menuService;
+				$scope.teas = menuService.teas;
+
 				$scope.order = [];
 				$scope.orderTotal = 0;
 				$scope.editQuantity = false;
@@ -37,16 +38,11 @@ app.directive("menu",['menuService',function(menuService){
 									}
 						}
 				};
-			// need to add 'Edit' and 'Remove' functions to corresponding buttons
-			// put these functions in 'menuService'
+
+			// need to put 'Edit' and 'Remove' functions to in 'menuService'
 			// put remove and edit functions in 'checkoutService' then into the checkout directive
 
-			$scope.edit = function(){
-				$scope.editQuantity = true;
-			};
-
 			$scope.save = function(){
-				$scope.editQuantity = false;
 				$scope.orderTotal -= this.tea.subTotal;
 				this.tea.subTotal = 0;
 				$scope.orderTotal += (this.tea.quantity * this.tea.price);
@@ -62,7 +58,4 @@ app.directive("menu",['menuService',function(menuService){
 			templateUrl: "app/components/menu/menu.view.html"
 		};
 }]);
-
-$scope.orderTotal = 0;
-
 

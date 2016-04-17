@@ -14,9 +14,9 @@
 
 			  	<button ng-show="continueShopping && !order.length" class="button" ng-click="continueShopping ? continueShopping = false : continueShopping = true">Start Shopping</button>
 
-			  	<button ng-show="order.length < 1" id="red" class="button" ng-click="checkoutPage(); continueShopping = true ">Checkout | Bag: Empty!</button>
+			  	<button ng-show="order.length < 1" id="red" class="button" ng-click="continueShopping = true ">Checkout | Bag: Empty!</button>
 
-			  	<button ng-show="order.length > 0" id="red" class="button" ng-click="checkoutPage(); continueShopping = true">Checkout | Bag: {{order.length}}</button>
+			  	<button ng-show="order.length > 0" id="red" class="button" ng-click="continueShopping = true">Checkout | Bag: {{order.length}}</button>
 			  	
 			</label>
 		</div>

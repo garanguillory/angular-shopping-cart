@@ -23,12 +23,12 @@
 				      </td>
 				      <td ng-show="!editQuantity"> {{tea.quantity}} </td>
 				      <td ng-show="editQuantity">
-				      	<input type="number" ng-model="tea.quantity">
+				      	<input type="number" min="1" ng-model="tea.quantity">
 				      </td>
 				      <td>{{tea.subTotal | money}}</td>
 				      <td>
-				      	<input type="button" value="Edit" ng-click="edit()" ng-show="!editQuantity">
-				      	<input type="button" value="Save" ng-click="save()" ng-show="editQuantity">
+				      	<input type="button" value="Edit" ng-click="editQuantity = true" ng-show="!editQuantity">
+				      	<input type="button" value="Save" ng-click="save(); editQuantity = false" ng-show="editQuantity">
 				      	<input type="button" value="Remove" ng-click="remove()">
 				      </td>
 				    </tr>

@@ -124,6 +124,8 @@ app.service('menuService',[ function(){
 	    }
 		];
 
-	return teas;
+	return { 
+		teas: teas
+		 };
 
 }]);
