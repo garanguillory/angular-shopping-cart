@@ -27,13 +27,9 @@
 				      </td>
 				      <td>{{tea.subTotal | money}}</td>
 				      <td>
-				      
 				      	<input type="button" value="Edit" ng-click="edit()" ng-show="!editQuantity">
-
 				      	<input type="button" value="Save" ng-click="save()" ng-show="editQuantity">
-				
 				      	<input type="button" value="Remove" ng-click="remove()">
-
 				      </td>
 				    </tr>
 				  </tbody>
@@ -41,3 +37,18 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="container" ng-show="!order.length">
+		<div class="row">
+			<div class="twelve columns">
+				<h3 class="centered">Your shopping cart is empty! </h3>
+				<h3 class="centered"> Click the 'START SHOPPING' button to shop!</h3>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+

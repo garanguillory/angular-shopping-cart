@@ -8,6 +8,7 @@ app.directive("menu",['menuService',function(menuService){
 				$scope.order = [];
 				$scope.orderTotal = 0;
 				$scope.editQuantity = false;
+				$scope.continueShopping = false;
 
 				$scope.addToBag = function(amount){
 					var order = $scope.order;
